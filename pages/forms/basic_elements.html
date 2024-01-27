@@ -5,10 +5,12 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Spica Admin</title>
+  <title>Glowme Admin</title>
   <!-- base:css -->
   <link rel="stylesheet" href="../../vendors/mdi/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
   <!-- endinject -->
   <!-- plugin css for this page -->
   <!-- End plugin css for this page -->
@@ -39,10 +41,44 @@
           <p>Components</p>
           <span></span>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
             <i class="mdi mdi-palette menu-icon"></i>
             <span class="menu-title">UI Elements</span>
+            <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="ui-basic">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Typography</a></li>
+            </ul>
+          </div>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="pages/forms/basic_elements.html">
+            <i class='bx bx-money-withdraw menu-icon'></i>
+            <span class="menu-title">Transaction</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="pages/charts/chartjs.html">
+            <i class='bx bx-user menu-icon'></i>
+            <span class="menu-title">User</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pages/tables/basic-table.html">
+            <i class='bx bx-book menu-icon' ></i>
+            <span class="menu-title">Article</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pages/icons/mdi.html">
+            <i class='bx bx-package menu-icon'></i>
+            <span class="menu-title">Product</span>
+          </a>
+        </li>
+            <!-- <span class="menu-title">UI Elements</span>
             <i class="menu-arrow"></i>
           </a>
           <div class="collapse" id="ui-basic">
@@ -95,22 +131,23 @@
               <li class="nav-item"> <a class="nav-link" href="../../pages/samples/lock-screen.html"> Lockscreen </a></li>
             </ul>
           </div>
-        </li>
-        <li class="nav-item sidebar-category">
+        </li> -->
+        
+        <!-- <li class="nav-item sidebar-category">
           <p>Apps</p>
           <span></span>
-        </li>
-        <li class="nav-item">
+        </li> -->
+        <!-- <li class="nav-item">
           <a class="nav-link" href="../../docs/documentation.html">
             <i class="mdi mdi-file-document-box-outline menu-icon"></i>
             <span class="menu-title">Documentation</span>
           </a>
-        </li>
-        <li class="nav-item">
+        </li> -->
+        <!-- <li class="nav-item">
           <a class="nav-link" href="http://www.bootstrapdash.com/demo/spica/template/">
             <button class="btn bg-danger btn-sm menu-title">Upgrade to pro</button>
           </a>
-        </li>
+        </li> -->
       </ul>
     </nav>
     
@@ -123,10 +160,10 @@
             <span class="mdi mdi-menu"></span>
           </button>
           <div class="navbar-brand-wrapper">
-            <a class="navbar-brand brand-logo" href="../../index.html"><img src="../../images/logo.svg" alt="logo"/></a>
-            <a class="navbar-brand brand-logo-mini" href="../../index.html"><img src="../../images/logo-mini.svg" alt="logo"/></a>
+            <a class="navbar-brand brand-logo" href="index.html"><img src="../../images/Glowme.png" alt="logo"/></a>
+            <a class="navbar-brand brand-logo-mini" href="index.html"><img src="../../images/Glowme.png" alt="logo"/></a>
           </div>
-          <h4 class="font-weight-bold mb-0 d-none d-md-block mt-1">Welcome back, Brandon Haynes</h4>
+          <h4 class="font-weight-bold mb-0 d-none d-md-block mt-1"></h4>
           <ul class="navbar-nav navbar-nav-right">
             <li class="nav-item">
               <h4 class="mb-0 font-weight-bold d-none d-xl-block">Mar 12, 2019 - Apr 10, 2019</h4>
@@ -241,7 +278,7 @@
             <li class="nav-item nav-profile dropdown">
               <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
                 <img src="../../images/faces/face5.jpg" alt="profile"/>
-                <span class="nav-profile-name">Eleanor Richardson</span>
+                <span class="nav-profile-name">Biila</span>
               </a>
               <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
                 <a class="dropdown-item">
@@ -272,8 +309,274 @@
           </ul>
         </div>
       </nav>
+      <div class="col-lg-12 mt-3 grid-margin stretch-card">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">User Transaction</h4>
+            <p class="card-description">
+             
+            </p>
+            <div  class="table-responsive pt-3">
+              <table class="table table-bordered" >
+                <thead style="text-align: center;">
+                  <tr>
+                    <th>
+                      Transaction Number
+                    </th>
+                    <th>
+                      Date
+                    </th>
+                    <th>
+                      Customer Name
+                    </th>
+                    <th>
+                      Order
+                    </th>
+                    <th>
+                      Address
+                    </th>
+                    <th>
+                      Phone Number
+                    </th>
+                    <th>
+                      Total
+                    </th>
+                    <th>
+                      Status
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      000170
+                    </td>
+                    <td>
+                      11 June 2023 15.01
+                    </td>
+                    <td>
+                      Stevani
+                    </td>
+                    <td>
+                      (2) SUNSCREEN TINT SOMETHINC
+                    </td>
+                    <td>
+                      Jl. Anggrek No. 123 Kota: Jakarta Barat
+                    </td>
+                    <td>
+                      0856 3526 1458
+                    </td>
+                    <td>
+                      IDR 190.000
+                    </td>
+                    <td class="d-flex">
+                      <button type="button" class="btn btn-primary btn-sm">edit</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      000171
+                    </td>
+                    <td>
+                      11 June 2023 15.00
+                    </td>
+                    <td>
+                      Yuni
+                    </td>
+                    <td>
+                      (1) SOMETHINC 10% NIACINAMIDE SERUM
+                    </td>
+                    <td>
+                      456 Jalan Mawar Kota: Surabaya
+                    </td>
+                    <td>
+                      0858 5641 5125
+                    </td>
+                    <td>
+                      IDR 95.000
+                    </td>
+                    <td class="d-flex">
+                      <button type="button" class="btn btn-primary btn-sm">edit</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      000172
+                    </td>
+                    <td>
+                      11 June 2023 14.56
+                    </td>
+                    <td>
+                      Beean
+                    </td>
+                    <td>
+                      (1) AVOSKIN MIRACALOUS DARK SPOTS SOLUTION AMPOULE
+                    </td>
+                    <td>
+                      Perumahan Delima Indah Blok C2 Kota: Bandung
+                    </td>
+                    <td>
+                      0845 6235 2154
+                    </td>
+                    <td>
+                      IDR 115.000
+                    </td>
+                    <td class="d-flex">
+                      <button type="button" class="btn btn-primary btn-sm">edit</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      000173
+                    </td>
+                    <td>
+                      11 June 2023 14.55
+                    </td>
+                    <td>
+                      Nathania
+                    </td>
+                    <td>
+                      (1) SUNSCREEN TINT SOMETHINC
+                    </td>
+                    <td>
+                      789 Jalan Kenanga Kota: Medan
+                    </td>
+                    <td>
+                      0845 6547 4521
+                    </td>
+                    <td>
+                      IDR 95.000
+                    </td>
+                    <td class="d-flex">
+                      <button type="button" class="btn btn-primary btn-sm">edit</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      000174
+                    </td>
+                    <td>
+                      11 June 2023 14.45
+                    </td>
+                    <td>
+                      Huina Dian
+                    </td>
+                    <td>
+                      (1) AVOSKIN MIRACALOUS DARK SPOTS SOLUTION AMPOULE
+                    </td>
+                    <td>
+                      Komplek Flamboyan Residence Kota: Yogyakarta
+                    </td>
+                    <td>
+                      0874 2645 4251
+                    </td>
+                    <td>
+                      IDR 115.000
+                    </td>
+                    <td class="d-flex">
+                      <button type="button" class="btn btn-primary btn-sm">edit</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      000175
+                    </td>
+                    <td>
+                      11 June 2023 14.40
+                    </td>
+                    <td>
+                      Kiyonu
+                    </td>
+                    <td>
+                      (1) AVOSKIN MIRACULOUS REFINING TONER
+                    </td>
+                    <td>
+                      101 Perumahan Melati Kota: Semarang
+                    </td>
+                    <td>
+                      0874 5642 8124
+                    </td>
+                    <td>
+                      IDR 169.000
+                    </td>
+                    <td class="d-flex">
+                      <button type="button" class="btn btn-primary btn-sm">edit</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      000176
+                    </td>
+                    <td>
+                      11 June 2023 14.36
+                    </td>
+                    <td>
+                      Rara Nisa
+                    </td>
+                    <td>
+                      (2) SOMETHINC 10% NIACINAMIDE SERUM
+                    </td>
+                    <td>
+                      Jl. Rafflesia No. 25 Kota: Makassar
+                    </td>
+                    <td>
+                      014 4564 1425
+                    </td>
+                    <td>
+                      IDR 190.000
+                    </td>
+                    <td class="d-flex">
+                      <button type="button" class="btn btn-primary btn-sm">edit</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      000176
+                    </td>
+                    <td>
+                      11 June 2023 14.36
+                    </td>
+                    <td>
+                      Rara Nisa
+                    </td>
+                    <td>
+                      (2) SOMETHINC 10% NIACINAMIDE SERUM
+                    </td>
+                    <td>
+                      Jl. Rafflesia No. 25 Kota: Makassar
+                    </td>
+                    <td>
+                      014 4564 1425
+                    </td>
+                    <td>
+                      IDR 190.000
+                    </td>
+                    <td class="d-flex">
+                      <button type="button" class="btn btn-primary btn-sm">edit</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <nav aria-label="Page navigation example mt-4 ">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+        </nav>
+
+      </div>
+    
       <!-- partial -->
-      <div class="main-panel">        
+      <!-- <div class="main-panel">        
         <div class="content-wrapper">
           <div class="row">
             <div class="col-md-6 grid-margin stretch-card">
@@ -690,8 +993,8 @@
                   </form>
                 </div>
               </div>
-            </div>
-            <div class="col-12 grid-margin stretch-card">
+            </div> -->
+            <!-- <div class="col-12 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
                   <h4 class="card-title">Inline forms</h4>
@@ -719,8 +1022,8 @@
                   </form>
                 </div>
               </div>
-            </div>
-            <div class="col-12 grid-margin">
+            </div> -->
+            <!-- <div class="col-12 grid-margin">
               <div class="card">
                 <div class="card-body">
                   <h4 class="card-title">Horizontal Two column</h4>
@@ -868,7 +1171,7 @@
                   </form>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
         <!-- content-wrapper ends -->
@@ -877,8 +1180,8 @@
           <div class="card">
             <div class="card-body">
               <div class="d-sm-flex justify-content-center justify-content-sm-between">
-                <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2020</span>
-                <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/" target="_blank">Bootstrap dashboard templates</a> from Bootstrapdash.com</span>
+                <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © glowme.com 2023</span>
+                <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">  <a href="https://www.bootstrapdash.com/" target="_blank"></a> </span>
               </div>
             </div>
           </div>
@@ -886,7 +1189,7 @@
         <!-- partial -->
       </div>
       <!-- main-panel ends -->
-    </div>
+    
     <!-- page-body-wrapper ends -->
   </div>
   <!-- container-scroller -->
